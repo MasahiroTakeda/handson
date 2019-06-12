@@ -3,7 +3,6 @@ from werkzeug import check_password_hash, generate_password_hash
 
 from flaskr import db
 
-
 class User(db.Model):
     __tablename__ = 'users'
 
@@ -37,7 +36,6 @@ class User(db.Model):
     def __repr__(self):
         return u'<User id={self.id} email={self.email!r}>'.format(
                 self=self)
-
 
 class Entry(db.Model):
     __tablename__ = 'entries'

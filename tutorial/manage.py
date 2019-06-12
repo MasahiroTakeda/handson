@@ -1,6 +1,7 @@
 from __future__ import print_function
-from flask.ext.script import Manager
-from flaskr import app , db
+from flask_script import Manager
+from flaskr import app, db
+#from flask_sqlalchemy import SQLAlchemy
 
 manager = Manager(app)
 
@@ -11,4 +12,4 @@ def init_db():
 if __name__ == '__main__':
     manager.run()
 
-app.run(host='127.0.0.1', port=5000, debug=True)
+    #flask.ext.script 
